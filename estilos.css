@@ -1,0 +1,175 @@
+body {
+  background-color: #00ff80;
+}
+
+#seccion-seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 30px;
+  margin: 8px;
+}
+
+.subtitulo {
+  margin: 12px;
+  font-size: 24px;
+}
+
+#contenedor-de-tarjetas {
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-pokemon {
+  width: 180px;
+  height: 100px;
+  background-color: rgb(0, 162, 255);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta-pokemon img {
+  width: 80px;
+}
+
+#contenedor-de-tarjetas input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: rgb(140, 0, 255);
+}
+
+#boton-seleccionar-mascota {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+#mostrar-mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mapa {
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+.botones-de-movimiento {
+  display: flex;
+}
+
+#mostrar-mapa button {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: white;
+  margin: 5px;
+}
+
+#seccion-seleccionar-ataques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contenedor-de-los-ataques {
+  display: flex;
+  width: 280px;
+  justify-content: center;
+}
+
+#contenedor_info_jugador,
+#contenedor_info_enemigo,
+#contenedor-de-todos-los-ataques-jugador,
+#contenedor-de-todos-los-ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contenedor_info_jugador img,
+#contenedor_info_enemigo img {
+  width: 90px;
+}
+
+#contenedor_info_jugador p,
+#contenedor_info_enemigo p {
+  font-size: 13px;
+}
+
+.boton-ataque-jugador,
+.boton-ataque-enemigo {
+  background-color: rgb(0, 162, 255);
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100px;
+  margin: 1px;
+}
+
+.contenedor-de-mensajes {
+  width: 250px;
+  background-color: rgb(0, 162, 255);
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#boton-reinicio {
+  border: none;
+  border-radius: 5px;
+}
+
+.contenedor-de-ataques {
+  display: flex;
+  width: 280px;
+}
+
+.contenedor-informacion-jugador,
+.contenedor-informacion-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+}
+
+.nuevo_ataque {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 10px;
+  background-color: rgb(0, 162, 255);
+}
+
+.nombre-Y-victorias {
+  text-align: center;
+  background-color: rgb(0, 204, 255);
+  padding: 0px;
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 110px;
+}
+
+@media (max-width: 425px) {
+  #contenedor-de-tarjetas {
+    flex-direction: column;
+  }
+}

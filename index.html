@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pokemon</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <section id="seccion-seleccionar-mascota">
+      <h1 class="titulo">Pokemon 💧🔥🌱</h1>
+
+      <h2 class="subtitulo">Elige tu mascota:</h2>
+
+      <div id="contenedor-de-tarjetas"></div>
+
+      <button id="boton-seleccionar-mascota" onclick="validar_eleccion_del_jugador()">Seleccionar</button>
+    </section>
+
+    <section id="mostrar-mapa">
+      <h2 id="subtitulo" class="subtitulo">Recorre el mapa con tu Pokemon</h2>
+
+      <canvas id="mapa"></canvas>
+
+      <br />
+      <button
+        onmouseup="detener_movimiento()"
+        onmousedown="mover_pokemon_arriba()"
+      >
+        Arriba
+      </button>
+      <div class="botones-de-movimiento">
+        <button
+          onmouseup="detener_movimiento()"
+          onmousedown="mover_pokemon_izquierda()"
+        >
+          Izquierda
+        </button>
+        <button
+          onmouseup="detener_movimiento()"
+          onmousedown="mover_pokemon_derecha()"
+        >
+          Derecha
+        </button>
+      </div>
+      <button
+        onmouseup="detener_movimiento()"
+        onmousedown="mover_pokemon_abajo()"
+      >
+        Abajo
+      </button>
+
+      <button onclick="">Aleatorio</button>
+    </section>
+
+    <section id="seccion-seleccionar-ataques">
+      <h1 class="titulo">Combate pokemon:</h1>
+      
+      <h2 class="subtitulo">💧>🔥>🌱>💧</h2>
+
+      <div class="contenedor-de-mensajes">
+        <p id="parrafo-de-resultados">"MUCHA SUERTE"</p>
+        <button id="boton-reinicio" onclick="reiniciar_juego ()">Reiniciar</button>
+      </div>
+
+      <div id="contenedor-de-los-ataques">
+
+        <div id="contenedor_info_jugador">
+          <div class="nombre-Y-victorias">
+            <p id="parrafo-mascota-jugador"></p>
+            <p id="parrafo-victorias-jugador"></p>
+          </div>
+          <p id="imagen-mascota-jugador"></p>
+          <div id="contenedor-de-todos-los-ataques-jugador"></div>
+        </div>
+        
+        <div class="contenedor-de-ataques">
+          <div class="contenedor-informacion-jugador">
+            
+            <div id="contenedor-ataques-jugador"></div>
+          </div>
+  
+          <div class="contenedor-informacion-enemigo">
+            
+            <div id="contenedor-ataques-enemigo"></div>
+          </div>
+        </div>
+
+        <div id="contenedor_info_enemigo">
+          <div class="nombre-Y-victorias">
+            <p id="parrafo-mascota-enemigo"></p>
+            <p id="parrafo-victorias-enemigo"></p>
+          </div>
+            <p id="imagen-mascota-enemigo"></p>
+            <div id="contenedor-de-todos-los-ataques-enemigo"></div>
+        </div>
+
+
+
+
+    </section>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
+
+
